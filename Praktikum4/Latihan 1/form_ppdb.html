@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Form Pendaftaran Sekolah</title>
+</head>
+<body>
+  <h2>Form Pendaftaran Sekolah</h2>
+  <form action="proses_ppdb.php" method="post">
+    <label>Nama:<br><input type="text" name="nama" required></label><br><br>
+    <label>NISN:<br><input type="text" name="nisn"></label><br><br>
+    <label>Alamat:<br><textarea name="alamat"></textarea></label><br><br>
+    <label>Tanggal Lahir:<br><input type="date" name="tanggal_lahir"></label><br><br>
+    <label>Sekolah Asal:<br><input type="text" name="sekolah_asal"></label><br><br>
+    <label>Jurusan:<br>
+      <select name="jurusan">
+        <option value="IPA">IPA</option>
+        <option value="IPS">IPS</option>
+        <option value="Bahasa">Bahasa</option>
+      </select>
+    </label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
